@@ -20,5 +20,5 @@ end
 def find_the_cheese(array)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_types.each_with_index { |cheese, i| array.include?(cheese) ? cheese_types[i] : nil }
+  cheese_types.each { |cheese, i| array.include?(cheese) ? cheese_types[i] : nil }
 end
